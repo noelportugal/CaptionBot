@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4355F1B1DA07B1700C13AFE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4355F1A1DA07B1700C13AFE /* Nimble.framework */; };
+		C4355F1D1DA07B1C00C13AFE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4355F1C1DA07B1C00C13AFE /* Quick.framework */; };
 		C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45737C31DA0475500F2BC53 /* CaptionBot.framework */; };
 		C45737D21DA0475500F2BC53 /* CaptionBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */; };
 		C45737D41DA0475500F2BC53 /* CaptionBot.h in Headers */ = {isa = PBXBuildFile; fileRef = C45737C61DA0475500F2BC53 /* CaptionBot.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C45737FA1DA04D3E00F2BC53 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45737F91DA04D3E00F2BC53 /* Nimble.framework */; };
-		C45737FC1DA04D4600F2BC53 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45737FB1DA04D4600F2BC53 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,14 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C4355F1A1DA07B1700C13AFE /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C4355F1C1DA07B1C00C13AFE /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		C45737C31DA0475500F2BC53 /* CaptionBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaptionBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45737C61DA0475500F2BC53 /* CaptionBot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionBot.h; sourceTree = "<group>"; };
 		C45737C71DA0475500F2BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C45737CC1DA0475500F2BC53 /* CaptionBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptionBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBotTests.swift; sourceTree = "<group>"; };
 		C45737D31DA0475500F2BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C45737F91DA04D3E00F2BC53 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		C45737FB1DA04D4600F2BC53 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +47,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45737FC1DA04D4600F2BC53 /* Quick.framework in Frameworks */,
-				C45737FA1DA04D3E00F2BC53 /* Nimble.framework in Frameworks */,
 				C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */,
+				C4355F1D1DA07B1C00C13AFE /* Quick.framework in Frameworks */,
+				C4355F1B1DA07B1700C13AFE /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +96,8 @@
 		C45737F61DA04D2400F2BC53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C45737FB1DA04D4600F2BC53 /* Quick.framework */,
-				C45737F91DA04D3E00F2BC53 /* Nimble.framework */,
+				C4355F1C1DA07B1C00C13AFE /* Quick.framework */,
+				C4355F1A1DA07B1700C13AFE /* Nimble.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
