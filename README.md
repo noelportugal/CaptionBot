@@ -3,6 +3,9 @@
 # CaptionBot
 A swift wrapper framework for Microsoft captionbot.ai
 
+# Carthage
+Add "noelportugal/CaptionBot" to your Cartfile and run "carthage update"
+
 # Usage
         captionBot(url: "https://www.captionbot.ai/images/6.jpg"){ caption, error in
             if let caption = caption{
