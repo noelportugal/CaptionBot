@@ -31,7 +31,7 @@ build/
 Pods
 
 # Carthage
-Carthage/Build
+#Carthage/Build
 
 # AppCode specific files
 .idea/

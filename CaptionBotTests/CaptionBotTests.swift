@@ -6,16 +6,16 @@
 //  Copyright © 2016 TheIoTLabs. All rights reserved.
 //
 
-import Quick
-import Nimble
-import CaptionBot
-
-class CaptionBot: QuickSpec {
-    override func spec() {
-        describe("CaptionBot") {
-            it("works") {
-                expect(true).to(beTrue())
-            }
-        }
-    }
-}
+//import Quick
+//import Nimble
+//import CaptionBot
+//
+//class CaptionBot: QuickSpec {
+//    override func spec() {
+//        describe("CaptionBot") {
+//            it("works") {
+//                expect(true).to(beTrue())
+//            }
+//        }
+//    }
+//}
