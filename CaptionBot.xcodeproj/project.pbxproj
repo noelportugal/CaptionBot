@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C43D6CB81DA0A12800ED4194 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43D6CB71DA0A12800ED4194 /* Nimble.framework */; };
+		C43D6CBA1DA0A12D00ED4194 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43D6CB91DA0A12D00ED4194 /* Quick.framework */; };
 		C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45737C31DA0475500F2BC53 /* CaptionBot.framework */; };
 		C45737D21DA0475500F2BC53 /* CaptionBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */; };
 		C45737D41DA0475500F2BC53 /* CaptionBot.h in Headers */ = {isa = PBXBuildFile; fileRef = C45737C61DA0475500F2BC53 /* CaptionBot.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C43D6CB71DA0A12800ED4194 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C43D6CB91DA0A12D00ED4194 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		C45737C31DA0475500F2BC53 /* CaptionBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaptionBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45737C61DA0475500F2BC53 /* CaptionBot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionBot.h; sourceTree = "<group>"; };
 		C45737C71DA0475500F2BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C43D6CBA1DA0A12D00ED4194 /* Quick.framework in Frameworks */,
+				C43D6CB81DA0A12800ED4194 /* Nimble.framework in Frameworks */,
 				C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +96,8 @@
 		C45737F61DA04D2400F2BC53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C43D6CB91DA0A12D00ED4194 /* Quick.framework */,
+				C43D6CB71DA0A12800ED4194 /* Nimble.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
