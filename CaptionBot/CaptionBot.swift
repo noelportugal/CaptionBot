@@ -6,7 +6,6 @@
 //  Copyright © 2016 theiotlabs. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public func captionBot(url: String, completion: @escaping (String?, Error?) -> Void) {

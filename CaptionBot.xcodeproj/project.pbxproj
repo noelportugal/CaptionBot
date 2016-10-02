@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C458BD301DA18B7F00B0111A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458BD2F1DA18B7F00B0111A /* AppDelegate.swift */; };
+		C458BD321DA18B7F00B0111A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C458BD311DA18B7F00B0111A /* ViewController.swift */; };
+		C458BD351DA18B7F00B0111A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C458BD331DA18B7F00B0111A /* Main.storyboard */; };
+		C458BD371DA18B7F00B0111A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C458BD361DA18B7F00B0111A /* Assets.xcassets */; };
+		C458BD3A1DA18B7F00B0111A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C458BD381DA18B7F00B0111A /* LaunchScreen.storyboard */; };
 		C480B4881DA16D26002BB5D9 /* CaptionBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C480B47E1DA16D26002BB5D9 /* CaptionBot.framework */; };
 		C480B48D1DA16D26002BB5D9 /* CaptionBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C480B48C1DA16D26002BB5D9 /* CaptionBotTests.swift */; };
 		C480B48F1DA16D26002BB5D9 /* CaptionBot.h in Headers */ = {isa = PBXBuildFile; fileRef = C480B4811DA16D26002BB5D9 /* CaptionBot.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +29,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C458BD2D1DA18B7F00B0111A /* CaptionBotExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptionBotExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C458BD2F1DA18B7F00B0111A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C458BD311DA18B7F00B0111A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C458BD341DA18B7F00B0111A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C458BD361DA18B7F00B0111A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C458BD391DA18B7F00B0111A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C458BD3B1DA18B7F00B0111A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C480B47E1DA16D26002BB5D9 /* CaptionBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaptionBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C480B4811DA16D26002BB5D9 /* CaptionBot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionBot.h; sourceTree = "<group>"; };
 		C480B4821DA16D26002BB5D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C458BD2A1DA18B7F00B0111A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C480B47A1DA16D26002BB5D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,11 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C458BD2E1DA18B7F00B0111A /* CaptionBotExample */ = {
+			isa = PBXGroup;
+			children = (
+				C458BD2F1DA18B7F00B0111A /* AppDelegate.swift */,
+				C458BD311DA18B7F00B0111A /* ViewController.swift */,
+				C458BD331DA18B7F00B0111A /* Main.storyboard */,
+				C458BD361DA18B7F00B0111A /* Assets.xcassets */,
+				C458BD381DA18B7F00B0111A /* LaunchScreen.storyboard */,
+				C458BD3B1DA18B7F00B0111A /* Info.plist */,
+			);
+			path = CaptionBotExample;
+			sourceTree = "<group>";
+		};
 		C480B4741DA16D26002BB5D9 = {
 			isa = PBXGroup;
 			children = (
 				C480B4801DA16D26002BB5D9 /* CaptionBot */,
 				C480B48B1DA16D26002BB5D9 /* CaptionBotTests */,
+				C458BD2E1DA18B7F00B0111A /* CaptionBotExample */,
 				C480B47F1DA16D26002BB5D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +99,7 @@
 			children = (
 				C480B47E1DA16D26002BB5D9 /* CaptionBot.framework */,
 				C480B4871DA16D26002BB5D9 /* CaptionBotTests.xctest */,
+				C458BD2D1DA18B7F00B0111A /* CaptionBotExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +137,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C458BD2C1DA18B7F00B0111A /* CaptionBotExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C458BD3C1DA18B8000B0111A /* Build configuration list for PBXNativeTarget "CaptionBotExample" */;
+			buildPhases = (
+				C458BD291DA18B7F00B0111A /* Sources */,
+				C458BD2A1DA18B7F00B0111A /* Frameworks */,
+				C458BD2B1DA18B7F00B0111A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaptionBotExample;
+			productName = CaptionBotExample;
+			productReference = C458BD2D1DA18B7F00B0111A /* CaptionBotExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C480B47D1DA16D26002BB5D9 /* CaptionBot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C480B4921DA16D26002BB5D9 /* Build configuration list for PBXNativeTarget "CaptionBot" */;
@@ -149,6 +200,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = theiotlabs;
 				TargetAttributes = {
+					C458BD2C1DA18B7F00B0111A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UA46TY94X9;
+						ProvisioningStyle = Automatic;
+					};
 					C480B47D1DA16D26002BB5D9 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UA46TY94X9;
@@ -168,6 +224,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = C480B4741DA16D26002BB5D9;
 			productRefGroup = C480B47F1DA16D26002BB5D9 /* Products */;
@@ -176,11 +233,22 @@
 			targets = (
 				C480B47D1DA16D26002BB5D9 /* CaptionBot */,
 				C480B4861DA16D26002BB5D9 /* CaptionBotTests */,
+				C458BD2C1DA18B7F00B0111A /* CaptionBotExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C458BD2B1DA18B7F00B0111A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C458BD3A1DA18B7F00B0111A /* LaunchScreen.storyboard in Resources */,
+				C458BD371DA18B7F00B0111A /* Assets.xcassets in Resources */,
+				C458BD351DA18B7F00B0111A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C480B47C1DA16D26002BB5D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +266,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C458BD291DA18B7F00B0111A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C458BD321DA18B7F00B0111A /* ViewController.swift in Sources */,
+				C458BD301DA18B7F00B0111A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C480B4791DA16D26002BB5D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -224,7 +301,52 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		C458BD331DA18B7F00B0111A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C458BD341DA18B7F00B0111A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C458BD381DA18B7F00B0111A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C458BD391DA18B7F00B0111A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		C458BD3D1DA18B8000B0111A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UA46TY94X9;
+				INFOPLIST_FILE = CaptionBotExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBotExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C458BD3E1DA18B8000B0111A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UA46TY94X9;
+				INFOPLIST_FILE = CaptionBotExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBotExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		C480B4901DA16D26002BB5D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +516,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C458BD3C1DA18B8000B0111A /* Build configuration list for PBXNativeTarget "CaptionBotExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C458BD3D1DA18B8000B0111A /* Debug */,
+				C458BD3E1DA18B8000B0111A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C480B4781DA16D26002BB5D9 /* Build configuration list for PBXProject "CaptionBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
