@@ -24,8 +24,24 @@ class CaptionBotTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAss∫ert and related functions to verify your tests produce the correct results.
-        let caption = CaptionBot(urlImage: "test")
-        print(caption)
+        captionBot(url: "test"){ caption, error in
+            if let caption = caption{
+                print("Caption: \(caption)")
+            }else{
+                print("Error: \(error)")
+            }
+        }
+        
+        let image = UIImage(named: "")!
+        captionBot(image: image){ caption, error in
+            if let caption = caption{
+                print("Caption: \(caption)")
+            }else{
+                print("Error: \(error)")
+            }
+        }
+        
+
     }
     
     func testPerformanceExample() {

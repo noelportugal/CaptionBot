@@ -9,46 +9,112 @@
 import Foundation
 import UIKit
 
-public func CaptionBot(urlImage: String) -> String {
-    return "It works!"
+public func captionBot(url: String, completion: @escaping (String?, Error?) -> Void) {
+    
+    getConversationId(){ conversationId, error in
+        if let conversationId = conversationId {
+            analyzeImage(conversationId: conversationId, userMessage: url){ message, error in
+                if message != nil {
+                    getCaption(conversationId: conversationId){ caption, error in
+                        if let caption = caption {
+                            completion(caption, nil)
+                            return
+                        }else{
+                            completion(nil, error)
+                            return
+                        }
+                    }
+                }else{
+                    completion(nil, error)
+                    return
+                }
+            }            
+        }else{
+            completion(nil, error)
+            return
+        }
+    }
+    
+}
+
+public func captionBot(image: UIImage, completion: @escaping (String?, Error?) -> Void){
+
+    getConversationId(){ conversationId, error in
+        if let conversationId = conversationId {
+            getImageUrl(conversationId: conversationId, image: image ) { imageUrl , error in
+                if let imageUrl = imageUrl {
+                    analyzeImage(conversationId: conversationId, userMessage: imageUrl){ message, error in
+                        if message != nil {
+                            getCaption(conversationId: conversationId){ caption, error in
+                                if let caption = caption {
+                                    completion(caption, nil)
+                                    return
+                                }else{
+                                    completion(nil, error)
+                                    return
+                                }
+                            }
+                        }else{
+                            completion(nil, error)
+                            return
+                        }
+                    }
+                }else{
+                    completion(nil, error)
+                    return
+                }
+            }
+        }else{
+            completion(nil, error)
+            return
+        }
+    }
+    
+    
 }
 
 private let baseUrl = "https://www.captionbot.ai/"
 
-private func getConversationId(){
+private func getConversationId(completion: @escaping (String?, Error?) -> Void){
     httpGet(url: baseUrl + "api/init") { conversationId, error in
         if let conversationId = conversationId?.replacingOccurrences(of: "\"", with: "") {
-            getImageUrl(conversationId: conversationId)
+            completion(conversationId, nil)
+            return
         }else {
-            print("Error \(error)")
+            completion(nil, error)
+            return
         }
     }
 }
 
 
-private func getImageUrl(conversationId: String){
-    let image = UIImage(named: "dog")
-    httpPostImage(url: baseUrl + "api/upload", image: image!) {imageUrl, error in
+private func getImageUrl(conversationId: String, image: UIImage, completion: @escaping (String?, Error?) -> Void){
+    httpPostImage(url: baseUrl + "api/upload", image: image) {imageUrl, error in
         if let imageUrl = imageUrl?.replacingOccurrences(of: "\"", with: "") {
-            analyzeImage(conversationId: conversationId, userMessage: imageUrl)
+            completion(imageUrl, nil)
+            return
         }else {
-            print("Error \(error)")
+            completion(nil, error)
+            return
         }
     }
 }
 
-private func analyzeImage(conversationId: String, userMessage: String){
+
+private func analyzeImage(conversationId: String, userMessage: String, completion: @escaping (String?, Error?) -> Void){
     let jsonDic = ["conversationId": conversationId, "userMessage" : userMessage] as Dictionary<String, String>
     httpPostJson(url: baseUrl + "api/message", jsonDict: jsonDic) { result, error in
         if result != nil {
-            getCaption(conversationId: conversationId)
+            completion("Success", nil)
+            return
         }else {
-            print("Error \(error)")
+            completion(nil, error)
+            return
         }
     }
 }
 
-private func getCaption(conversationId: String){
+private func getCaption(conversationId: String, completion: @escaping (String?, Error?) -> Void){
     let captionUrl = baseUrl + "api/message?waterMark=&conversationId=" + conversationId
     httpGet(url: captionUrl) { html, error in
         if let html = html {
@@ -61,10 +127,12 @@ private func getCaption(conversationId: String){
             let jsonDict = convertStringToDictionary(text: jsonString)
             let botMessages = jsonDict?["BotMessages"] as? [String]
             let message = (botMessages?[1])! as String
-            print("Caption: \(message)")
+            completion(message, nil)
+            return
             
         }else {
-            print("Error \(error)")
+            completion(nil, error)
+            return
         }
     }
 }
@@ -83,7 +151,7 @@ private func convertStringToDictionary(text: String) -> [String:AnyObject]? {
 }
 
 
-private func httpGet(url: String, completionHandler: @escaping (String?, NSError?) -> Void ) {
+private func httpGet(url: String, completion: @escaping (String?, NSError?) -> Void ) {
     
     let myUrl = URL(string: url)
     var request = URLRequest(url:myUrl!)
@@ -93,23 +161,23 @@ private func httpGet(url: String, completionHandler: @escaping (String?, NSError
         data, response, error in
         
         guard error == nil else {
-            completionHandler(nil, error as NSError?)
+            completion(nil, error as NSError?)
             return
         }
         guard let data = data else {
-            completionHandler(nil, nil)
+            completion(nil, nil)
             return
         }
         
         let result = String(data: data, encoding: String.Encoding.utf8)
-        completionHandler(result, nil)
+        completion(result, nil)
         return
     }
     task.resume()
 }
 
 
-private func httpPostImage(url: String, image: UIImage, completionHandler: @escaping (String?, NSError?) -> Void ) {
+private func httpPostImage(url: String, image: UIImage, completion: @escaping (String?, NSError?) -> Void ) {
     
     let myUrl = URL(string: url)
     var request = URLRequest(url:myUrl!)
@@ -137,16 +205,16 @@ private func httpPostImage(url: String, image: UIImage, completionHandler: @esca
     let task = URLSession.shared.dataTask(with: request as URLRequest) {
         data, response, error in
         guard error == nil else {
-            completionHandler(nil, error as NSError?)
+            completion(nil, error as NSError?)
             return
         }
         guard let data = data else {
-            completionHandler(nil, nil)
+            completion(nil, nil)
             return
         }
         
         let result = String(data: data, encoding: String.Encoding.utf8)
-        completionHandler(result, nil)
+        completion(result, nil)
         return
     }
     
@@ -154,10 +222,10 @@ private func httpPostImage(url: String, image: UIImage, completionHandler: @esca
     
 }
 
-private func httpPostJson(url: String, jsonDict: Dictionary<String, String>, completionHandler: @escaping (String?, NSError?) -> Void ){
+private func httpPostJson(url: String, jsonDict: Dictionary<String, String>, completion: @escaping (String?, NSError?) -> Void ){
     
-    let myUrl = URL(string: url)
-    var request = URLRequest(url:myUrl!)
+    let nsUrl = URL(string: url)
+    var request = URLRequest(url:nsUrl!)
     request.httpMethod = "POST"
     
     request.httpBody = try! JSONSerialization.data(withJSONObject: jsonDict, options: [])
@@ -167,16 +235,16 @@ private func httpPostJson(url: String, jsonDict: Dictionary<String, String>, com
         data, response, error in
         
         guard error == nil else {
-            completionHandler(nil, error as NSError?)
+            completion(nil, error as NSError?)
             return
         }
         guard let data = data else {
-            completionHandler(nil, nil)
+            completion(nil, nil)
             return
         }
         
         let result = String(data: data, encoding: String.Encoding.utf8)
-        completionHandler(result, nil)
+        completion(result, nil)
         return
     }
     task.resume()
