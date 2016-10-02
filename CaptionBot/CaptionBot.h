@@ -2,8 +2,8 @@
 //  CaptionBot.h
 //  CaptionBot
 //
-//  Created by Noel Portugal on 10/1/16.
-//  Copyright © 2016 TheIoTLabs. All rights reserved.
+//  Created by Noel Portugal on 10/2/16.
+//  Copyright © 2016 theiotlabs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

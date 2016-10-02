@@ -7,123 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C43D6CB81DA0A12800ED4194 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43D6CB71DA0A12800ED4194 /* Nimble.framework */; };
-		C43D6CBA1DA0A12D00ED4194 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43D6CB91DA0A12D00ED4194 /* Quick.framework */; };
-		C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45737C31DA0475500F2BC53 /* CaptionBot.framework */; };
-		C45737D21DA0475500F2BC53 /* CaptionBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */; };
-		C45737D41DA0475500F2BC53 /* CaptionBot.h in Headers */ = {isa = PBXBuildFile; fileRef = C45737C61DA0475500F2BC53 /* CaptionBot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4256D7B1DA145F400A5E68B /* CaptionBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4256D711DA145F400A5E68B /* CaptionBot.framework */; };
+		C4256D801DA145F400A5E68B /* CaptionBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4256D7F1DA145F400A5E68B /* CaptionBotTests.swift */; };
+		C4256D821DA145F400A5E68B /* CaptionBot.h in Headers */ = {isa = PBXBuildFile; fileRef = C4256D741DA145F400A5E68B /* CaptionBot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4256D8C1DA1477400A5E68B /* CaptionBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4256D8B1DA1477400A5E68B /* CaptionBot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C45737CE1DA0475500F2BC53 /* PBXContainerItemProxy */ = {
+		C4256D7C1DA145F400A5E68B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C45737BA1DA0475500F2BC53 /* Project object */;
+			containerPortal = C4256D681DA145F400A5E68B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C45737C21DA0475500F2BC53;
+			remoteGlobalIDString = C4256D701DA145F400A5E68B;
 			remoteInfo = CaptionBot;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C43D6CB71DA0A12800ED4194 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		C43D6CB91DA0A12D00ED4194 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
-		C45737C31DA0475500F2BC53 /* CaptionBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaptionBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45737C61DA0475500F2BC53 /* CaptionBot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionBot.h; sourceTree = "<group>"; };
-		C45737C71DA0475500F2BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C45737CC1DA0475500F2BC53 /* CaptionBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptionBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBotTests.swift; sourceTree = "<group>"; };
-		C45737D31DA0475500F2BC53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4256D711DA145F400A5E68B /* CaptionBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CaptionBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4256D741DA145F400A5E68B /* CaptionBot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptionBot.h; sourceTree = "<group>"; };
+		C4256D751DA145F400A5E68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4256D7A1DA145F400A5E68B /* CaptionBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptionBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4256D7F1DA145F400A5E68B /* CaptionBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionBotTests.swift; sourceTree = "<group>"; };
+		C4256D811DA145F400A5E68B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4256D8B1DA1477400A5E68B /* CaptionBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptionBot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C45737BF1DA0475500F2BC53 /* Frameworks */ = {
+		C4256D6D1DA145F400A5E68B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C45737C91DA0475500F2BC53 /* Frameworks */ = {
+		C4256D771DA145F400A5E68B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C43D6CBA1DA0A12D00ED4194 /* Quick.framework in Frameworks */,
-				C43D6CB81DA0A12800ED4194 /* Nimble.framework in Frameworks */,
-				C45737CD1DA0475500F2BC53 /* CaptionBot.framework in Frameworks */,
+				C4256D7B1DA145F400A5E68B /* CaptionBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C45737B91DA0475500F2BC53 = {
+		C4256D671DA145F400A5E68B = {
 			isa = PBXGroup;
 			children = (
-				C45737C51DA0475500F2BC53 /* CaptionBot */,
-				C45737D01DA0475500F2BC53 /* CaptionBotTests */,
-				C45737C41DA0475500F2BC53 /* Products */,
-				C45737F61DA04D2400F2BC53 /* Frameworks */,
+				C4256D731DA145F400A5E68B /* CaptionBot */,
+				C4256D7E1DA145F400A5E68B /* CaptionBotTests */,
+				C4256D721DA145F400A5E68B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C45737C41DA0475500F2BC53 /* Products */ = {
+		C4256D721DA145F400A5E68B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C45737C31DA0475500F2BC53 /* CaptionBot.framework */,
-				C45737CC1DA0475500F2BC53 /* CaptionBotTests.xctest */,
+				C4256D711DA145F400A5E68B /* CaptionBot.framework */,
+				C4256D7A1DA145F400A5E68B /* CaptionBotTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C45737C51DA0475500F2BC53 /* CaptionBot */ = {
+		C4256D731DA145F400A5E68B /* CaptionBot */ = {
 			isa = PBXGroup;
 			children = (
-				C45737C61DA0475500F2BC53 /* CaptionBot.h */,
-				C45737C71DA0475500F2BC53 /* Info.plist */,
+				C4256D741DA145F400A5E68B /* CaptionBot.h */,
+				C4256D8B1DA1477400A5E68B /* CaptionBot.swift */,
+				C4256D751DA145F400A5E68B /* Info.plist */,
 			);
 			path = CaptionBot;
 			sourceTree = "<group>";
 		};
-		C45737D01DA0475500F2BC53 /* CaptionBotTests */ = {
+		C4256D7E1DA145F400A5E68B /* CaptionBotTests */ = {
 			isa = PBXGroup;
 			children = (
-				C45737D11DA0475500F2BC53 /* CaptionBotTests.swift */,
-				C45737D31DA0475500F2BC53 /* Info.plist */,
+				C4256D7F1DA145F400A5E68B /* CaptionBotTests.swift */,
+				C4256D811DA145F400A5E68B /* Info.plist */,
 			);
 			path = CaptionBotTests;
-			sourceTree = "<group>";
-		};
-		C45737F61DA04D2400F2BC53 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C43D6CB91DA0A12D00ED4194 /* Quick.framework */,
-				C43D6CB71DA0A12800ED4194 /* Nimble.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		C45737C01DA0475500F2BC53 /* Headers */ = {
+		C4256D6E1DA145F400A5E68B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45737D41DA0475500F2BC53 /* CaptionBot.h in Headers */,
+				C4256D821DA145F400A5E68B /* CaptionBot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C45737C21DA0475500F2BC53 /* CaptionBot */ = {
+		C4256D701DA145F400A5E68B /* CaptionBot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C45737D71DA0475500F2BC53 /* Build configuration list for PBXNativeTarget "CaptionBot" */;
+			buildConfigurationList = C4256D851DA145F400A5E68B /* Build configuration list for PBXNativeTarget "CaptionBot" */;
 			buildPhases = (
-				C45737BE1DA0475500F2BC53 /* Sources */,
-				C45737BF1DA0475500F2BC53 /* Frameworks */,
-				C45737C01DA0475500F2BC53 /* Headers */,
-				C45737C11DA0475500F2BC53 /* Resources */,
+				C4256D6C1DA145F400A5E68B /* Sources */,
+				C4256D6D1DA145F400A5E68B /* Frameworks */,
+				C4256D6E1DA145F400A5E68B /* Headers */,
+				C4256D6F1DA145F400A5E68B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -131,74 +118,77 @@
 			);
 			name = CaptionBot;
 			productName = CaptionBot;
-			productReference = C45737C31DA0475500F2BC53 /* CaptionBot.framework */;
+			productReference = C4256D711DA145F400A5E68B /* CaptionBot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C45737CB1DA0475500F2BC53 /* CaptionBotTests */ = {
+		C4256D791DA145F400A5E68B /* CaptionBotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C45737DA1DA0475500F2BC53 /* Build configuration list for PBXNativeTarget "CaptionBotTests" */;
+			buildConfigurationList = C4256D881DA145F400A5E68B /* Build configuration list for PBXNativeTarget "CaptionBotTests" */;
 			buildPhases = (
-				C45737C81DA0475500F2BC53 /* Sources */,
-				C45737C91DA0475500F2BC53 /* Frameworks */,
-				C45737CA1DA0475500F2BC53 /* Resources */,
+				C4256D761DA145F400A5E68B /* Sources */,
+				C4256D771DA145F400A5E68B /* Frameworks */,
+				C4256D781DA145F400A5E68B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C45737CF1DA0475500F2BC53 /* PBXTargetDependency */,
+				C4256D7D1DA145F400A5E68B /* PBXTargetDependency */,
 			);
 			name = CaptionBotTests;
 			productName = CaptionBotTests;
-			productReference = C45737CC1DA0475500F2BC53 /* CaptionBotTests.xctest */;
+			productReference = C4256D7A1DA145F400A5E68B /* CaptionBotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C45737BA1DA0475500F2BC53 /* Project object */ = {
+		C4256D681DA145F400A5E68B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = theiotlabs;
 				TargetAttributes = {
-					C45737C21DA0475500F2BC53 = {
+					C4256D701DA145F400A5E68B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UA46TY94X9;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
-					C45737CB1DA0475500F2BC53 = {
+					C4256D791DA145F400A5E68B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UA46TY94X9;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = C45737BD1DA0475500F2BC53 /* Build configuration list for PBXProject "CaptionBot" */;
+			buildConfigurationList = C4256D6B1DA145F400A5E68B /* Build configuration list for PBXProject "CaptionBot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = C45737B91DA0475500F2BC53;
-			productRefGroup = C45737C41DA0475500F2BC53 /* Products */;
+			mainGroup = C4256D671DA145F400A5E68B;
+			productRefGroup = C4256D721DA145F400A5E68B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C45737C21DA0475500F2BC53 /* CaptionBot */,
-				C45737CB1DA0475500F2BC53 /* CaptionBotTests */,
+				C4256D701DA145F400A5E68B /* CaptionBot */,
+				C4256D791DA145F400A5E68B /* CaptionBotTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C45737C11DA0475500F2BC53 /* Resources */ = {
+		C4256D6F1DA145F400A5E68B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C45737CA1DA0475500F2BC53 /* Resources */ = {
+		C4256D781DA145F400A5E68B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,33 +198,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C45737BE1DA0475500F2BC53 /* Sources */ = {
+		C4256D6C1DA145F400A5E68B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4256D8C1DA1477400A5E68B /* CaptionBot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C45737C81DA0475500F2BC53 /* Sources */ = {
+		C4256D761DA145F400A5E68B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C45737D21DA0475500F2BC53 /* CaptionBotTests.swift in Sources */,
+				C4256D801DA145F400A5E68B /* CaptionBotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C45737CF1DA0475500F2BC53 /* PBXTargetDependency */ = {
+		C4256D7D1DA145F400A5E68B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C45737C21DA0475500F2BC53 /* CaptionBot */;
-			targetProxy = C45737CE1DA0475500F2BC53 /* PBXContainerItemProxy */;
+			target = C4256D701DA145F400A5E68B /* CaptionBot */;
+			targetProxy = C4256D7C1DA145F400A5E68B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C45737D51DA0475500F2BC53 /* Debug */ = {
+		C4256D831DA145F400A5E68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -275,7 +266,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -287,7 +278,7 @@
 			};
 			name = Debug;
 		};
-		C45737D61DA0475500F2BC53 /* Release */ = {
+		C4256D841DA145F400A5E68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -322,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -333,38 +324,39 @@
 			};
 			name = Release;
 		};
-		C45737D81DA0475500F2BC53 /* Debug */ = {
+		C4256D861DA145F400A5E68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UA46TY94X9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CaptionBot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		C45737D91DA0475500F2BC53 /* Release */ = {
+		C4256D871DA145F400A5E68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UA46TY94X9;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CaptionBot/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,10 +365,11 @@
 			};
 			name = Release;
 		};
-		C45737DB1DA0475500F2BC53 /* Debug */ = {
+		C4256D891DA145F400A5E68B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UA46TY94X9;
 				INFOPLIST_FILE = CaptionBotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBotTests;
@@ -385,10 +378,11 @@
 			};
 			name = Debug;
 		};
-		C45737DC1DA0475500F2BC53 /* Release */ = {
+		C4256D8A1DA145F400A5E68B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UA46TY94X9;
 				INFOPLIST_FILE = CaptionBotTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.theiotlabs.CaptionBotTests;
@@ -400,34 +394,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C45737BD1DA0475500F2BC53 /* Build configuration list for PBXProject "CaptionBot" */ = {
+		C4256D6B1DA145F400A5E68B /* Build configuration list for PBXProject "CaptionBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C45737D51DA0475500F2BC53 /* Debug */,
-				C45737D61DA0475500F2BC53 /* Release */,
+				C4256D831DA145F400A5E68B /* Debug */,
+				C4256D841DA145F400A5E68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C45737D71DA0475500F2BC53 /* Build configuration list for PBXNativeTarget "CaptionBot" */ = {
+		C4256D851DA145F400A5E68B /* Build configuration list for PBXNativeTarget "CaptionBot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C45737D81DA0475500F2BC53 /* Debug */,
-				C45737D91DA0475500F2BC53 /* Release */,
+				C4256D861DA145F400A5E68B /* Debug */,
+				C4256D871DA145F400A5E68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		C45737DA1DA0475500F2BC53 /* Build configuration list for PBXNativeTarget "CaptionBotTests" */ = {
+		C4256D881DA145F400A5E68B /* Build configuration list for PBXNativeTarget "CaptionBotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C45737DB1DA0475500F2BC53 /* Debug */,
-				C45737DC1DA0475500F2BC53 /* Release */,
+				C4256D891DA145F400A5E68B /* Debug */,
+				C4256D8A1DA145F400A5E68B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C45737BA1DA0475500F2BC53 /* Project object */;
+	rootObject = C4256D681DA145F400A5E68B /* Project object */;
 }
