@@ -10,45 +10,38 @@ import XCTest
 @testable import CaptionBot
 
 class CaptionBotTests: XCTestCase {
-    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
-    
+
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
+
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAss∫ert and related functions to verify your tests produce the correct results.
-        captionBot(url: "test"){ caption, error in
-            if let caption = caption{
+        captionBot(url: "test") { caption, error in
+            if let caption = caption {
                 print("Caption: \(caption)")
-            }else{
+            } else {
                 print("Error: \(error)")
             }
         }
-        
         let image = UIImage(named: "")!
-        captionBot(image: image){ caption, error in
-            if let caption = caption{
+        captionBot(image: image) { caption, error in
+            if let caption = caption {
                 print("Caption: \(caption)")
-            }else{
+            } else {
                 print("Error: \(error)")
             }
         }
-        
-
     }
-    
+
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }
